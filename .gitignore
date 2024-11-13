@@ -1,0 +1,29 @@
+# Dependências do Node.js
+node_modules/
+# Saída de construção Angular
+dist/
+# Saída temporária de build (específica do Angular)
+.out-tsc/
+#Gerado pelo Angular CLI
+.angular/
+
+# Arquivos e pastas do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de configuração de IDEs
+.vscode/
+.idea/
+
+# Logs e relatórios de erros
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Configurações locais de ferramentas e builds
+angular.json
+*.iml
+*.temp
+*.tmp
