@@ -1,24 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import './styles/colors';
 
 /* Dark Mode */
 :root {
-    --navbar-bg-color: #333333;
-    --navbar-text-color: #C0C0C0;
-    --background-color: #333333;
-    --text-color: #C0C0C0;
+    --navbar-bg-color: #{$primary-color};
+    --navbar-text-color: #{$secondary-color};
+    --background-color: #{$primary-color};
+    --text-color: #{$secondary-color};
 
-    --button-dark-bg: #333333;
-    --button-dark-text: #C0C0C0;
-    --button-light-bg: #ffffff;
-    --button-light-text: #333333;
+    --button-dark-bg: #{$button-dark-bg};
+    --button-dark-text: #{$button-dark-text};
+    --button-light-bg: #{$button-light-bg};
+    --button-light-text: #{$button-light-text};
 }
 
 /* Light Mode */
 body.light-theme {
-    --navbar-bg-color: #ffffff;
-    --navbar-text-color: #333333;
-    --background-color: #ffffff;
-    --text-color: #333333;
+    --navbar-bg-color: #{$white-color};
+    --navbar-text-color: #{$primary-color};
+    --background-color: #{$white-color};
+    --text-color: #{$primary-color};
 }
 
 /* Buttons */
