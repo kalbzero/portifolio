@@ -1,1 +1,18 @@
-<p>navbar works!</p>
+<nav class="navbar">
+    <div class="navbar__logo">
+      <img src="assets/logo.png" alt="Logo" />
+    </div>
+  
+    <div class="navbar__menu">
+      <a href="#about">Sobre Mim</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#education">Graduações</a>
+      <a href="#projects">Projetos</a>
+      <a href="#experience">Onde Trabalhei</a>
+      <a href="#volunteer">Voluntariado</a>
+    </div>
+  
+    <div class="navbar__switch">
+         <button [ngClass]="colorButton" (click)="toggleDarkMode()">{{ nameButton }}</button>
+    </div>
+  </nav>

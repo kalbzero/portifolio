@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Dark Mode */
+:root {
+    --navbar-bg-color: #333333;
+    --navbar-text-color: #C0C0C0;
+    --background-color: #333333;
+    --text-color: #C0C0C0;
+
+    --button-dark-bg: #333333;
+    --button-dark-text: #C0C0C0;
+    --button-light-bg: #ffffff;
+    --button-light-text: #333333;
+}
+
+/* Light Mode */
+body.light-theme {
+    --navbar-bg-color: #ffffff;
+    --navbar-text-color: #333333;
+    --background-color: #ffffff;
+    --text-color: #333333;
+}
+
+/* Buttons */
+.dark-mode-btn {
+    background-color: var(--button-dark-bg);
+    color: var(--button-dark-text);
+    border: 2px solid var(--button-dark-text);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.dark-mode-btn:hover {
+    background-color: var(--button-dark-text);
+    color: var(--button-dark-bg);
+}
+.light-mode-btn {
+    background-color: var(--button-light-bg);
+    color: var(--button-light-text);
+    border: 2px solid var(--button-light-text);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.light-mode-btn:hover {
+    background-color: var(--button-light-text);
+    color: var(--button-light-bg);
+}
