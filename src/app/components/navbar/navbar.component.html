@@ -13,6 +13,8 @@
     </div>
   
     <div class="navbar__switch">
-         <button [ngClass]="colorButton" (click)="toggleDarkMode()">{{ nameButton }}</button>
+      <button class="language-button" style="--bg-image: url('assets/lang/usa_flag_icon_round.png')" (click)="setLanguage('en')"></button>
+      <button class="language-button" style="--bg-image: url('assets/lang/brazilian_flag_icon_round.png')" (click)="setLanguage('pt')"></button>
+      <button [ngClass]="colorButton" (click)="toggleDarkMode()">{{ nameButton }}</button>
     </div>
   </nav>
